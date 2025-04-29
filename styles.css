@@ -1,0 +1,186 @@
+/* basic CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* background-color: #f4f4f4 Important; */
+    color: #333;
+
+}
+/* Container */
+.container-fluid{
+     background-color: #f4f4f4;
+
+}
+
+
+/*Menu-CSS*/
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f4f4f4; */
+    padding: 30px 0;
+}
+.menu-item{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 0;
+    
+}
+.menu-item a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #7886C7;
+
+    transition: all 0.3s ease;
+}
+.menu-item:hover {
+    color: #2D336B;
+    text-decoration: underline;
+}
+.menu-item:active {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+
+/*landing-container-CSS*/
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.landing-container h1 {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+}
+
+.png-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.png-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.png-container img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.png-container img:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* titel-container */
+.col.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 200px;
+}
+
+.title-container h2{
+    display: block;
+}
+
+/* button */
+button.btn.btn-sm{
+    background-color: #7886C7;
+    color: #2D336B;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}   
+
+/* to-do-list container */
+    #taskInputContainer{
+        margin: 20px;
+        margin-left: 30px;
+    }
+    #taskInputContainer button{
+        background-color: #7886C7;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    #taskInputContainer button:hover{
+        background-color: #2D336B;
+        color: white;
+    }
+    #taskInputContainer button:active{
+        background-color: #0056b3;
+        color: white;
+    }
+    #taskInputContainer input[type="text"]{
+        width: 70%;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+    #taskInputContainer input[type="text"]:focus{
+        outline: none;
+        border-color: #7886C7;
+    }
+
+    #taskInputContainer input[type="text"]:hover{
+        border-color: #2D336B;
+    }
+    #taskInputContainer input[type="text"]:active{
+        border-color: #0056b3;
+    }
+    #taskInputContainer ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    #taskInputContainer li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    button {
+      padding: 10px;
+      margin-left: 5px;
+      font-size: 16px;
+    }
+    li {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      justify-content: space-between;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .task-text {
+      flex: 1;
+      margin-right: 10px;
+      cursor: pointer;
+    }
